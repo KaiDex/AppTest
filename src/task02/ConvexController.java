@@ -1,7 +1,6 @@
 package task02;
 
 public class ConvexController {
-
     private final int dxMax;
     private final int dxMin;
     private final int dyMax;

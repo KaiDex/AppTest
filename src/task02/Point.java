@@ -32,7 +32,6 @@ public class Point implements Comparable {
                 ", y=" + y +
                 '}';
     }
-
     @Override
     public int compareTo(Object o) {
         Point o1 = (Point) o;

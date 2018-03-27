@@ -1,4 +1,6 @@
-public class Controller {
+package task02;
+
+public class ConvexController {
 
     private final int dxMax;
     private final int dxMin;
@@ -13,7 +15,7 @@ public class Controller {
         ConvexFunction function = new ConvexFunction();
         Point initial = new Point(4,5);
         Point end = new Point(9,11);
-        Controller controller = new Controller(3, 2, 5, 1,
+        ConvexController controller = new ConvexController(3, 2, 5, 1,
                 initial, end, function);
         controller.executeRoute();
 
@@ -128,8 +130,8 @@ public class Controller {
         abstract int move(Point point, int distance);
     }
 
-    public Controller(final int dxMax, final int dxMin, final int dyMax, final int dyMin,
-                      final Point initialPoint, final Point endPoint, final ConvexFunction function) {
+    public ConvexController(final int dxMax, final int dxMin, final int dyMax, final int dyMin,
+                            final Point initialPoint, final Point endPoint, final ConvexFunction function) {
         this.function = function;
         this.dxMax = dxMax;
         this.dxMin = dxMin;

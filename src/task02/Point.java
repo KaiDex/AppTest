@@ -1,6 +1,5 @@
-/**
- * Created by 100500 on 25.03.2018.
- */
+package task02;
+
 public class Point implements Comparable {
     private int x;
     private int y;
@@ -28,7 +27,7 @@ public class Point implements Comparable {
 
     @Override
     public String toString() {
-        return "Point{" +
+        return "task02.Point{" +
                 "x=" + x +
                 ", y=" + y +
                 '}';

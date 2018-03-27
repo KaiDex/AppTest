@@ -1,3 +1,5 @@
+package task02;
+
 class ConvexFunction {
 
     Point getMaxXPoint(int y) {

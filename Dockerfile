@@ -1,3 +1,5 @@
 FROM openjdk
-#CMD javac src/task02/*.java
-#ENTRYPOINT exec java -classpath ./src task02.ConvexController
+VOLUME testv:/test
+COPY . /test
+CMD javac ./test/src/task02/*.java
+ENTRYPOINT exec java -classpath ./test/src task02.ConvexController
